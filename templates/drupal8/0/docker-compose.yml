@@ -10,4 +10,5 @@ db:
   environment:
     MYSQL_ROOT_PASSWORD: example
     MYSQL_DATABASE: drupal
+    MYSSQL_USER: drupal
 
