@@ -9,7 +9,7 @@
       description: "public port to access the Drupal 7 site"
       label: "Public Port"
       required: true
-      default: "80"
+      default: "8084"
       type: "int"
 
 
