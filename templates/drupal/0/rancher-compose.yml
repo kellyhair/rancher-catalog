@@ -1,6 +1,6 @@
 .catalog:
   name: "Drupal 7"
-  version: "v0.1"
+  version: "Drupal 7.x - FPM"
   description: "Community Plumbing"
   uuid: Drupal7-0
   minimum_rancher_version: v0.51.0
@@ -13,4 +13,4 @@
       type: "int"
 
 
-drupal:
+drupal7-fpm:

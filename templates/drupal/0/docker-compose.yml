@@ -1,4 +1,4 @@
-drupal:
+drupal7-fpm:
   image: drupal:7-fpm
   links:
     - db:mysql
