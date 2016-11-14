@@ -1,0 +1,11 @@
+drupal8:
+  image: drupal:8
+  links:
+    - db:mysql
+  ports:
+    - ${public_port}:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example

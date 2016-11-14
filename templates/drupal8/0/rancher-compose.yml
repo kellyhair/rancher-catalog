@@ -1,0 +1,16 @@
+.catalog:
+  name: "Drupal 8"
+  version: "Drupal 8.x"
+  description: "Community Plumbing"
+  uuid: Drupal8-0
+  minimum_rancher_version: v0.51.0
+  questions:    
+    - variable: public_port
+      description: "public port to access the Drupal 8 site"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+
+
+drupal8:
