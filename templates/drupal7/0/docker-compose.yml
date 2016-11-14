@@ -9,3 +9,26 @@ db:
   image: mariadb
   environment:
     MYSQL_ROOT_PASSWORD: example
+    MYSQL_DATABASE: drupal
+redis:
+  image: redis:2.8
+  ports:
+    - "6379"
+
+solr:
+  build: ../../build/drupal-solr
+  ports:
+    - "8983"
+
+web:
+  build: ../../build/drupal-nginx-php55x
+  ports:
+   - "80"
+   - "443"
+   - "22"
+  volumes:
+   - /opt/code/example/drupal:/var/www
+  links:
+   - mysql
+   - redis
+   - solr
