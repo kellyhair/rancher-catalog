@@ -11,27 +11,27 @@
       required: true
       default: "80"
       type: "int"
-    - variable: MariaDB Password (root)
+    - variable: mariadb_password
       description: "root password for MariaDB"
-      label: "mariadb_password"
+      label: "MariaDB Password"
       required: false
       default: ""
       type: "string"
-    - variable: Drupal Database
+    - variable: drupal_database
       description: "Drupal Database Name"
-      label: "drupal_database"
-      required: "true"
       default: "drupal"
+      label: "Drupal database"
+      required: "true"
       type: "string"
-    - variable: Drupal User
+    - variable: drupal_user 
       description: "Drupal Username"
-      label: "drupal_user"
+      label: "Drupal database user"
       required: "true"
       default: "drupal"
       type: "string"
-    - variable: Drupal Database password
+    - variable: drupal_password
       description: "Drupal Database password"
-      label: "drupal_password"
+      label: "Drupal database password"
       required: "true"
       default: "drupal"
       type: "string"
