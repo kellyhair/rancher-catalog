@@ -14,7 +14,7 @@
     - variable: mariadb_password
       description: "root password for MariaDB"
       label: "MariaDB Password"
-      required: false
+      required: true
       default: ""
       type: "string"
     - variable: drupal_database
