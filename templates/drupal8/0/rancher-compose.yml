@@ -2,7 +2,7 @@
   name: "Drupal 8"
   version: "Drupal 8.x"
   description: "Community Plumbing"
-  uuid: Drupal8-0
+  uuid: Drupal8-20161114
   minimum_rancher_version: v0.51.0
   questions:    
     - variable: public_port
@@ -11,12 +11,12 @@
       required: true
       default: "80"
       type: "int"
-    - variable: mariadb_password
-      description: "root password for MariaDB"
-      label: "MariaDB Password"
-      required: true
-      default: ""
-      type: "string"
+#    - variable: mariadb_password
+#      description: "root password for MariaDB"
+#      label: "MariaDB Password"
+#      required: true
+#      default: ""
+#      type: "string"
     - variable: drupal_database
       description: "Drupal Database Name"
       default: "drupal"
