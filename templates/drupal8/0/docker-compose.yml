@@ -8,9 +8,9 @@ drupal8:
 db:
   image: mariadb
   environment:
-    MYSQL_ROOT_PASSWORD: ''
-    MYSQL_DATABASE: drupal
-    MYSQL_USER: drupal
-    MYSQL_PASSWORD: drupal
+    MYSQL_ROOT_PASSWORD: ${mariadb_password}:''
+    MYSQL_DATABASE: ${drupal_database}:drupal
+    MYSQL_USER: ${drupal_user}:drupal
+    MYSQL_PASSWORD: ${drupal_password}:drupal
     MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
 
